@@ -2,13 +2,13 @@
     path = ~/.gitconfig.local
 
 [color]
-	ui = true
+    ui = true
 
 [alias]
-	st = status
-	df = diff
-	co = commit
-	br = branch
-	ps = push
-	pl = pull
-	ck = checkout
+    st = status
+    df = diff
+    co = commit
+    br = branch
+    ps = push
+    pl = pull
+    ck = checkout
