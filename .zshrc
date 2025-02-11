@@ -104,14 +104,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias g='git'
 alias d='docker'
-alias dc='docker-compose'
-alias dcps='docker-compose ps'
-alias dcup='docker-compose up'
-alias dcdown='docker-compose down'
-alias dcstop='docker-compose stop'
-alias dcstart='docker-compose start'
-alias dcpaup='docker-compose --profile all up'
-alias dcpastop='docker-compose --profile all stop'
+alias dc='docker compose'
 eval "$(pyenv init -)"
 export PATH="$HOME/.poetry/bin:$PATH"
 
