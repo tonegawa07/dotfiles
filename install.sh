@@ -19,3 +19,17 @@ if [ ! -f "$HOME/.gitconfig.local" ]; then
     echo "Created ~/.gitconfig.local. Please edit it to add your name and email."
 fi
 
+# GitHub CLI extensions
+if command -v gh &>/dev/null; then
+    echo "Installing GitHub CLI extensions..."
+    while IFS= read -r ext; do
+        if [ -n "$ext" ]; then
+            if gh extension install "$ext"; then
+                echo "✅ Successfully installed: $ext"
+            else
+                echo "❌ Failed to install: $ext"
+            fi
+        fi
+    done < "$DOTFILES_DIR/gh_extensions.txt"
+    echo "🎉 All GitHub CLI extensions have been installed!"
+fi
