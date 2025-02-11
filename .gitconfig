@@ -7,8 +7,9 @@
 [alias]
     st = status
     df = diff
-    co = commit
+    co = checkout
+    ci = commit
     br = branch
     ps = push
     pl = pull
-    ck = checkout
+    sw = switch
