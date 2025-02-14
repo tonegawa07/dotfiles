@@ -5,6 +5,7 @@
     ui = true
 
 [alias]
+    l  = log
     st = status
     df = diff
     co = checkout
