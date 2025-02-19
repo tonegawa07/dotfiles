@@ -105,8 +105,6 @@ source $ZSH/oh-my-zsh.sh
 alias g='git'
 alias d='docker'
 alias dc='docker compose'
-eval "$(pyenv init -)"
-export PATH="$HOME/.poetry/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
