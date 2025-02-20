@@ -1,3 +1,5 @@
+setopt AUTO_CD
+
 # plugins
 plugins=(git)
 
