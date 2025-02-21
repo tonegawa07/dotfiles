@@ -1,13 +1,5 @@
 setopt AUTO_CD
 
-# plugins
-plugins=(git)
-
-# aliases
-alias g='git'
-alias d='docker'
-alias dc='docker compose'
-
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
@@ -15,3 +7,17 @@ export NVM_DIR="$HOME/.nvm"
 
 # starship
 eval "$(starship init zsh)"
+
+# zsh-autosuggestions
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# zsh-syntax-highlighting
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# zsh-abbr
+source /opt/homebrew/share/zsh-abbr/zsh-abbr.zsh
+abbr -S g='git'
+abbr -S d='docker'
+alias dc='docker compose'
+abbr -S dc='docker compose'
+
