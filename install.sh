@@ -6,6 +6,7 @@ echo "Setting up symlinks..."
 
 # シンボリックリンク
 ln -sf "$DOTFILES_DIR/.zshrc" "$HOME/.zshrc"
+ln -sf "$DOTFILES_DIR/.zimrc" "$HOME/.zimrc"
 ln -sf "$DOTFILES_DIR/.gitconfig" "$HOME/.gitconfig"
 
 echo "Dotfiles setup completed!"
