@@ -16,9 +16,11 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # zsh-abbr
 source /opt/homebrew/share/zsh-abbr/zsh-abbr.zsh
+alias g='git'
+alias d='docker'
+alias dc='docker compose'
 abbr -S g='git'
 abbr -S d='docker'
-alias dc='docker compose'
 abbr -S dc='docker compose'
 
 # history search
