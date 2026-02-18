@@ -2,7 +2,6 @@ format = """
 $directory\
 $git_branch\
 $git_status\
-$git_metrics\
 $time\
 \n$character"""
 
@@ -12,18 +11,17 @@ format = '[$symbol $branch ]($style)'
 
 [git_status]
 format = '[(\[$conflicted$deleted$renamed$modified$staged$untracked\])($ahead_behind)($stashed)]($style) '
-conflicted = '[!${count}](red)'
-stashed = '[${count}](blue)'
-deleted = '[-${count}](red)'
-renamed = '[➜${count}](blue)'
-modified = '[~${count}](yellow)'
-staged = '[✓${count}](green)'
-untracked = '[+${count}](green)'
+conflicted = '[C${count}](bright-red)'
+stashed = '[📦${count}](blue)'
+deleted = '[D${count}](red)'
+renamed = '[R${count}](bright-black)'
+modified = '[M${count}](blue)'
+staged = '[A${count}](green)'
+untracked = '[U${count}](green)'
 up_to_date = '✅'
 
 [git_metrics]
-disabled = false
-only_nonzero_diffs = false
+disabled = true
 
 [time]
 disabled = false
