@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOTFILES_DIR="$HOME/dotfiles"
+DOTFILES_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 echo "Setting up symlinks..."
 
@@ -9,6 +9,8 @@ ln -sf "$DOTFILES_DIR/.zshrc" "$HOME/.zshrc"
 ln -sf "$DOTFILES_DIR/.zimrc" "$HOME/.zimrc"
 ln -sf "$DOTFILES_DIR/.gitconfig" "$HOME/.gitconfig"
 ln -sf "$DOTFILES_DIR/.config/starship.toml" "$HOME/.config/starship.toml"
+ln -sf "$DOTFILES_DIR/.zshrc.darwin" "$HOME/.zshrc.darwin"
+ln -sf "$DOTFILES_DIR/.zshrc.linux" "$HOME/.zshrc.linux"
 
 echo "Dotfiles setup completed!"
 
