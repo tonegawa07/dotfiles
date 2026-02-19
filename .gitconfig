@@ -17,3 +17,6 @@
 
 [init]
 	defaultBranch = main
+
+[ghq]
+    root = ~/ghq
