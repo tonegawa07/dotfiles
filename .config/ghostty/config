@@ -54,6 +54,11 @@ font-size = 14
 keybind = cmd+opt+right=next_tab
 keybind = cmd+opt+left=previous_tab
 
+keybind = cmd+ctrl+right=new_split:right
+keybind = cmd+ctrl+left=new_split:left
+keybind = cmd+ctrl+up=new_split:up
+keybind = cmd+ctrl+down=new_split:down
+
 keybind = cmd+shift+right=goto_split:right
 keybind = cmd+shift+left=goto_split:left
 keybind = cmd+shift+up=goto_split:top
