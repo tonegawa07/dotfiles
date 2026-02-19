@@ -8,7 +8,17 @@ echo "Setting up symlinks..."
 ln -sf "$DOTFILES_DIR/.zshrc" "$HOME/.zshrc"
 ln -sf "$DOTFILES_DIR/.zimrc" "$HOME/.zimrc"
 ln -sf "$DOTFILES_DIR/.gitconfig" "$HOME/.gitconfig"
-ln -sf "$DOTFILES_DIR/.config/starship.toml" "$HOME/.config/starship.toml"
+# starship
+if command -v starship &>/dev/null; then
+    mkdir -p "$HOME/.config"
+    ln -sf "$DOTFILES_DIR/.config/starship.toml" "$HOME/.config/starship.toml"
+fi
+
+# Ghostty
+if command -v ghostty &>/dev/null; then
+    mkdir -p "$HOME/.config/ghostty"
+    ln -sf "$DOTFILES_DIR/.config/ghostty/config" "$HOME/.config/ghostty/config"
+fi
 ln -sf "$DOTFILES_DIR/.zshrc.darwin" "$HOME/.zshrc.darwin"
 ln -sf "$DOTFILES_DIR/.zshrc.linux" "$HOME/.zshrc.linux"
 
