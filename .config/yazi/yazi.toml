@@ -1,0 +1,13 @@
+[preview]
+wrap = "yes"
+
+[opener]
+view = [
+    { run = 'bat "$@"', block = true, desc = "View with bat" },
+]
+
+[open]
+rules = [
+    { mime = "text/*", use = "view" },
+]
+

@@ -14,6 +14,12 @@ if command -v starship &>/dev/null; then
     ln -sf "$DOTFILES_DIR/.config/starship.toml" "$HOME/.config/starship.toml"
 fi
 
+# yazi
+if command -v yazi &>/dev/null; then
+    mkdir -p "$HOME/.config/yazi"
+    ln -sf "$DOTFILES_DIR/.config/yazi/yazi.toml" "$HOME/.config/yazi/yazi.toml"
+fi
+
 # Ghostty
 if command -v ghostty &>/dev/null; then
     mkdir -p "$HOME/.config/ghostty"
