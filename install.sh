@@ -18,6 +18,7 @@ fi
 if command -v yazi &>/dev/null; then
     mkdir -p "$HOME/.config/yazi"
     ln -sf "$DOTFILES_DIR/.config/yazi/yazi.toml" "$HOME/.config/yazi/yazi.toml"
+    ln -sf "$DOTFILES_DIR/.config/yazi/keymap.toml" "$HOME/.config/yazi/keymap.toml"
 fi
 
 # Ghostty

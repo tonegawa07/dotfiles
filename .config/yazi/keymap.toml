@@ -1,0 +1,9 @@
+[[manager.prepend_keymap]]
+on   = "s"
+run  = "search --via=fd --args='--ignore'"
+desc = "Search files by name (git-aware)"
+
+[[manager.prepend_keymap]]
+on   = "S"
+run  = "search --via=rg --args='--ignore'"
+desc = "Search files by content (git-aware)"
