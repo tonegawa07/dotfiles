@@ -2,6 +2,13 @@
 
 DOTFILES_DIR="$(cd "$(dirname "$0")" && pwd)"
 
+# zim が未インストールなら警告
+if [ ! -d "$HOME/.zim" ]; then
+    echo "Error: zim is not installed. Install it first, then re-run this script."
+    echo "  https://zimfw.sh/"
+    exit 1
+fi
+
 echo "Setting up symlinks..."
 
 # シンボリックリンク
