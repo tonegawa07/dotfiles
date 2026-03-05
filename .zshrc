@@ -18,6 +18,7 @@ eval "$(ndir --init)"
 alias g='git'
 alias d='docker'
 alias dc='docker compose'
+alias nd='ndir'
 abbr -S g='git'
 abbr -S d='docker'
 abbr -S dc='docker compose'
