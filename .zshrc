@@ -12,6 +12,9 @@ source ${ZIM_HOME}/init.zsh
 # starship
 eval "$(starship init zsh)"
 
+# ndir
+eval "$(ndir --init)"
+
 alias g='git'
 alias d='docker'
 alias dc='docker compose'
@@ -35,3 +38,10 @@ zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
 bindkey "^[[A" history-beginning-search-backward-end
 bindkey "^[[B" history-beginning-search-forward-end
+
+# bun completions
+[ -s "/Users/starx117/.bun/_bun" ] && source "/Users/starx117/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
