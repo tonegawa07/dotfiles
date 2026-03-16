@@ -19,9 +19,20 @@ alias g='git'
 alias d='docker'
 alias dc='docker compose'
 alias nd='ndir'
-abbr -S g='git'
-abbr -S d='docker'
-abbr -S dc='docker compose'
+alias ghop='githop'
+abbr -S -q g='git'
+abbr -S -q d='docker'
+abbr -S -q dc='docker compose'
+abbr -S -q nd='ndir'
+abbr -S -q ghop='githop'
+
+# ghq + fzf
+function gf() {
+    local dir=$(ghq list -p | fzf)
+    if [ -n "$dir" ]; then
+        cd "$dir"
+    fi
+}
 
 # yazi
 function y() {
